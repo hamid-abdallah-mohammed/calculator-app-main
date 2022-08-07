@@ -86,7 +86,7 @@ function changeThemeTwo(){
 
 function deleteValues(){
   let out =  document.querySelector('.screen')
-  let current = out.value
+  let current = out.innerHTML
   
   current.slice(0, -1)
 }
