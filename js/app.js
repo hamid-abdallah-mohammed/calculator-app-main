@@ -73,7 +73,7 @@ function changeThemeTwo(){
   
  
   restValues.addEventListener('click',  restAll)
-  // del.addEventListener('click', deleteValues)
+  del.addEventListener('click', deleteValues)
   equal.addEventListener('click', displayResult)
 
   btns.forEach(btn => {
