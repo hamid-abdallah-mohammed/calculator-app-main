@@ -81,13 +81,15 @@ function changeThemeTwo(){
       var value = e.target.dataset.num;
        screen.value+= value;
 
-       if(e.target.dataset.num === 'DEL'){
-                 
-        }
     })
   })
 
-
+function deleteValues(){
+  let out =  document.querySelector('.screen')
+  let current = out.value
+  
+  current.slice(0, -1)
+}
 
   function restAll(){
         screen.value = ''
