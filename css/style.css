@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Theme 1 */
+--Very-dark-blue-co:  hsl(222, 26%, 31%); /*(main background):*/
+--Very-dark-blue-btn:  hsl(223, 31%, 20%); /*(toggle background, keypad background)*/
+--Very-dark-blue:  hsl(224, 36%, 15%); /*(screen background):*/
+/* Keys */
+--dark-blueOne: hsl(225, 21%, 49%);/*(key background)*/
+--dark-bluTwo: hsl(224, 28%, 35%); /*(key shadow)*/
+--Red: hsl(6, 63%, 50%);/*(key background, toggle)*/
+--Dark-red: hsl(6, 70%, 34%); /*(key shadow)*/
+--Light-grayish-orange: hsl(30, 25%, 89%); /*(key background)*/
+--Grayish-orange: hsl(28, 16%, 65%); /*(key shadow)*/
+/* Text */
+--Very-dark-grayish-blue: hsl(221, 14%, 31%);
+--White: hsl(0, 0, 100%);
+
+/* Theme 2 */
+
+/*Backgrounds*/
+--Light-gray: hsl(0, 0%, 90%); /*(main background)*/
+--Grayish-red: hsl(0, 5%, 81%); /* (toggle background, keypad background)*/
+--Very-light-gray :hsl(0, 0%, 93%); /*(screen background)*/
+
+/* Keys */
+--Dark-moderate-cyan: hsl(185, 42%, 37%); /*(key background)*/
+--Very-dark-cyan: hsl(185, 58%, 25%); /*(key shadow)*/
+
+--Orange: hsl(25, 98%, 40%); /* (key background, toggle)*/
+--Dark-orange: hsl(25, 99%, 27%); /* (key shadow)*/
+
+--Light-grayish-yellow: hsl(45, 7%, 89%); /*(key background)*/
+--Dark-grayish-orange: hsl(35, 11%, 61%); /*(key shadow)*/
+
+
+
+/* Theme 3 */
+
+/* Backgrounds */
+--Very-dark-violet: hsl(268, 75%, 9%); /*(main background)*/
+--Very-dark-violet: hsl(268, 71%, 12%) ; /*(toggle background, keypad background, screen background)*/
+
+/* Keys */
+--Dark-violet: hsl(281, 89%, 26%); /*(key background)*/
+--Vivid-magenta: hsl(285, 91%, 52%); /* (key shadow)*/
+
+--Pure-cyan: hsl(176, 100%, 44%); /* (key background, toggle)*/
+--Soft-cyan: hsl(177, 92%, 70%); /*(key shadow)*/
+
+--Very-dark-violet: hsl(268, 47%, 21%); /*(key background)*/
+--Dark-magenta: hsl(290, 70%, 36%); /* (key shadow)*/
+
+/* Text */
+--Light-yellow: hsl(52, 100%, 62%);
+--Very-dark-blue: hsl(198, 20%, 13%);
+--White: hsl(0, 0, 100%); /*(text)*/
+
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Very-dark-blue-co);
+}
+.container{
+  margin-top: 3rem;   
+}
+
+.container .calculator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.calculator .calc-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    gap: 1rem;
+}
+ .calculator .name-theme-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+ }
+
+ .calculator .theme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.theme p{
+    font-size: .7rem;
+    margin-top: 1rem;
+}
+
+.change-theme .numbers{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 10px;
+   margin-bottom: 3px;
+   gap: 1.5rem;
+   
+}
+
+.change-theme .numbers button{
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+.theme .change-theme .balls{
+    display: flex;
+    justify-content: space-between;
+    background: var(--Very-dark-blue-btn);
+   height: 20px;
+   align-items: center;
+   border-radius: 5rem;
+   padding: .7rem 0;
+}
+.theme .change-theme .balls .bg{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.balls .bg-1{
+   background: var(--Red);
+}
+
+.balls .bg-2, .balls .bg-3{
+    opacity: 0;
+}
+
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form input{
+    background: var(--Very-dark-blue-btn); 
+    border-radius: .6rem;
+    width: 100%;
+    color: #fff;
+    height: 70px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 0 .5rem;
+   border: none;
+   outline: none;
+    pointer-events: none;
+    text-align: right;
+ }
+
+ .calc-result span{
+  
+ }
+ .calculator .buttons{
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px;
+    gap: 15px;
+    padding: 2rem;
+    background: var(--Very-dark-blue-btn);
+    width: auto;
+ }
+.buttons .btn{
+      padding: .5rem;
+      border-radius: .5rem;
+      font-weight: bold;
+      outline: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px var(--Grayish-orange);
+      transition: all .3s ease;
+}
+
+.buttons .btn:hover{
+    box-shadow: 0px 5px 2px var(--Grayish-orange);
+}
+
+
+.buttons .DEL{
+    background: var(--dark-blueOne);
+    color: #fff; 
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.buttons .rest, .result{
+     display: grid;
+     grid-template-columns: 140px 140px;
+     grid-template-rows: 33px;
+ }
+
+ .rest button, .result button {
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    cursor: pointer;
+ }
+.rest button{
+    color: var(--White);
+    background: var(--dark-blueOne);
+    color: #fff;
+    transition: all .3s ease;
+}
+.rest button:hover{
+    box-shadow: 0 1px 1px 0 var(--Light-gray);
+}
+ .result button{
+    color: #fff;
+    background: var(--Red);
+    transition: all .3s ease;
+ }
+
+ .result button:hover{
+    box-shadow: 0 3px 2px var(--Dark-red);
+ }
+ .buttons .result{
+    margin: 0 85px;
+ }
+

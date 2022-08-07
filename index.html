@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body> 
+
+     <div class="container">
+           <!-- name and theme part -->
+        <div class="calculator">
+          <div class="calc-group">
+          <div class="name-theme-group">
+            <div class="name color">calc</div>
+            <div class="theme">
+               <p class="color"> THEME </p>
+              <div class="change-theme">
+                <div class="numbers">
+                 <button class="changeTheme theme-1 color">1</button>
+                 <button class="changeTheme theme-2 color">2</button>
+                 <button class="changeTheme theme-3 color">3</button>
+                </div>
+                <div class="balls BG">
+                  <button class="bg bg-1 color-2"></button>
+                  <button class="bg bg-2 color-2"></button>
+                  <button class="bg bg-3 color-2"></button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <form>
+              <input type="text" class="screen color BG" >
+             </form>
+          </div>
+
+         
+
+           <div class="buttons">
+            
+              <button class="btn" data-num="7">7</button>
+              <button class="btn" data-num="8">8</button>
+              <button class="btn" data-num="9">9</button>
+              <button class="btn DEL calc-color" data-num="DEL">DEL</button>
+              <button class="btn" data-num="4">4</button>
+              <button class="btn" data-num="5">4</button>
+              <button class="btn" data-num="6">6</button>
+              <button class="btn plus" data-num="+">+</button>
+              <button class="btn" data-num="1">1</button>
+              <button class="btn" data-num="2">2</button>
+              <button class="btn" data-num="3">3</button>
+              <button class="btn minus" data-num="-">-</button>
+              <button class="btn dot">.</button>
+              <button class="btn" data-num="0">0</button>
+              <button class="btn div" data-num="/">/</button>
+              <button class="btn mult" data-num="x">x</button>    
+              <div class="rest "><button class="calc-color deleteAll">Rest</button></div>
+              <div class="result"><button class="color-2 display">=</button></div>
+          </div>
+        </div>
+     </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
