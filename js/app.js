@@ -73,23 +73,26 @@ function changeThemeTwo(){
   
  
   restValues.addEventListener('click',  restAll)
-  del.addEventListener('click', deleteValues)
   equal.addEventListener('click', displayResult)
 
   btns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       var value = e.target.dataset.num;
        screen.value+= value;
-
     })
   })
 
-function deleteValues(){
-  let out =  document.querySelector('.screen')
-  let current = out.value
+
+  del.addEventListener('click', deleteValues)
+
+  function deleteValues(e){
+    
+    let current = screen.value;
+  screen.value = current.slice(0,-1)
   
-  current.slice(0, -1)
-}
+      
+  }
+
 
   function restAll(){
         screen.value = ''
@@ -103,3 +106,6 @@ function deleteValues(){
          screen.value = answer
     }
   }
+
+
+
